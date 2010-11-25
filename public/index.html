@@ -18,8 +18,9 @@
       color: white;
       position: relative;
       width: 450px;
-      margin: 0px auto 0px;
+      margin: 0px auto 10px;
       cursor: default;
+      height: 100px;
     }
 
     #header_main {
@@ -34,16 +35,91 @@
      left: 5px;
      color: #9dc0d5;
     }
+    
+    #social_bar {
+      width: 450px;
+      margin: 0px auto 0px;
+    }
+    
+    ul {
+      list-style: none;
+      display: block;
+      padding: 0px;
+      margin: 0px auto 0px;
+    }
+    
+    ul li {
+      margin: 5px;
+      float: left;
+    }
+    
+    ul li img {
+      opacity: 0.6;
+    }
+    
+    ul li img:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    
+    img#album_cover {
+      border: 10px solid white;
+      display: block;
+      width: 420px;       
+      -moz-box-shadow: 5px 5px 0px #9dc0d5;
+      -webkit-box-shadow: 5px 5px 0px #9dc0d5;      
+    }
+    
+    div#album_cover_holder {
+      position: relative;
+      display: block;
+      width: 440px;
+      margin: 0px auto 20px;       
+    }
+    
+    #buy_it_on_itunes {
+      position: absolute;
+      opacity: 0.5;
+      top: 390px;
+      left: 20px;
+    }
+
+    #buy_it_on_itunes:hover {
+      opacity: 1;
+      cursor: pointer;
+    }    
+    
   </style>
 </head>
 <body>
   <div id="header">
-  <div id="header_main">
-    BENVOLIO
+    <div id="header_main">
+      BENVOLIO
+    </div>
+    <div id="header_shadow">
+      BENVOLIO
+    </div>
   </div>
-  <div id="header_shadow">
-    BENVOLIO
+  
+  <div id="album_cover_holder">
+    <img id="album_cover" src="./i/album_cover.jpg" />
+    <img id="buy_it_on_itunes" src="http://ax.phobos.apple.com.edgesuite.net/images/web/linkmaker/badge_itunes-lrg.gif" />
   </div>
+  
+  <div id="social_bar">
+    <ul>
+      <li>
+        <a href="http://www.facebook.com/pages/Benvolio/165383746813704?v=wall">
+          <img src="./i/facebook_32.png" />
+        </a>
+      </li>
+      <li>
+        <img src="./i/youtube_32.png" />
+      </li>      
+      <li>
+        <img src="./i/twitter_32.png" />
+      </li>            
+    </ul>
   </div>
 </body>
 </html>
